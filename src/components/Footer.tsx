@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BRAND_NAME } from '../data/productData';
+import { KosnoraLogo } from './KosnoraLogo';
 import { PlaceholderModal } from './PlaceholderModal';
 
 export const Footer: React.FC = () => {
@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
   };
 
   const closeModal = () => {
-    setModalState(prev => ({ ...prev, isOpen: false }));
+    setModalState((prev) => ({ ...prev, isOpen: false }));
   };
 
   const policies = [
@@ -42,46 +42,46 @@ export const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-neutral-950 text-neutral-400 py-16 border-t border-neutral-900">
+      <footer className="bg-black text-neutral-400 py-16 border-t-2 border-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-neutral-900">
             {/* Brand Column */}
             <div className="md:col-span-6 space-y-4">
-              <span className="text-2xl font-black tracking-[0.2em] text-white uppercase block">
-                {BRAND_NAME}
-              </span>
-              <p className="text-sm font-semibold text-neutral-300">
+              <a href="#" className="inline-block">
+                <KosnoraLogo />
+              </a>
+              <p className="text-sm font-bold text-neutral-200 uppercase tracking-wider">
                 Make your phone uniquely yours.
               </p>
-              <p className="text-xs text-neutral-400 max-w-sm leading-relaxed font-normal">
-                Battery-free smart NFC phone cases engineered for endless personalized self-expression.
+              <p className="text-xs text-neutral-400 max-w-sm leading-relaxed font-medium">
+                Battery-free smart NFC phone cases engineered for endless personalized self-expression. Change your picture whenever you want.
               </p>
             </div>
 
             {/* Links Column */}
             <div className="md:col-span-6 flex flex-col md:items-end justify-between space-y-6">
-              <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-neutral-400">
-                <a href="#how-it-works" className="hover:text-white transition-colors">
+              <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs font-black uppercase tracking-widest text-neutral-300">
+                <a href="#how-it-works" className="hover:text-[#CEFF00] transition-colors">
                   How It Works
                 </a>
-                <a href="#benefits" className="hover:text-white transition-colors">
+                <a href="#benefits" className="hover:text-[#CEFF00] transition-colors">
                   Benefits
                 </a>
-                <a href="#compatibility" className="hover:text-white transition-colors">
+                <a href="#compatibility" className="hover:text-[#CEFF00] transition-colors">
                   Compatibility
                 </a>
-                <a href="#faq" className="hover:text-white transition-colors">
+                <a href="#faq" className="hover:text-[#CEFF00] transition-colors">
                   FAQ
                 </a>
               </div>
 
               {/* Policy Legal Links */}
-              <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-neutral-400">
+              <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-neutral-400 font-semibold">
                 {policies.map((p) => (
                   <button
                     key={p.label}
                     onClick={() => openPolicy(p.label, p.content)}
-                    className="hover:text-white transition-colors underline-offset-4 hover:underline text-left"
+                    className="hover:text-white transition-colors underline-offset-4 hover:underline text-left cursor-pointer"
                   >
                     {p.label}
                   </button>
@@ -89,21 +89,21 @@ export const Footer: React.FC = () => {
               </div>
 
               {/* Social Media Placeholders */}
-              <div className="flex items-center gap-4 text-xs text-neutral-400">
-                <span className="font-semibold text-neutral-300">Social:</span>
-                <span className="hover:text-white transition-colors cursor-pointer">[Instagram: @kosnora]</span>
+              <div className="flex items-center gap-4 text-xs font-bold text-neutral-400">
+                <span className="text-neutral-200">Social:</span>
+                <span className="hover:text-[#CEFF00] transition-colors cursor-pointer">[Instagram: @kosnora]</span>
                 <span className="text-neutral-700">·</span>
-                <span className="hover:text-white transition-colors cursor-pointer">[TikTok: @kosnora]</span>
+                <span className="hover:text-[#CEFF00] transition-colors cursor-pointer">[TikTok: @kosnora]</span>
               </div>
             </div>
           </div>
 
           {/* Copyright & Disclaimer */}
-          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400 font-normal">
+          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-medium">
             <div>
-              © {new Date().getFullYear()} {BRAND_NAME}. All rights reserved.
+              © {new Date().getFullYear()} KOSNORA. All rights reserved.
             </div>
-            <div className="text-neutral-400 text-center sm:text-right">
+            <div className="text-center sm:text-right">
               iPhone is a trademark of Apple Inc. KOSNORA is an independent accessory brand.
             </div>
           </div>

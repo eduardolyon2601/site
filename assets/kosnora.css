@@ -4,9 +4,9 @@
 :root {
   --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --color-bg-dark: #000000;
-  --color-bg-tech: #0D0E12;
-  --color-bg-light: #FAFAFA;
-  --color-bg-neutral: #F3F4F6;
+  --color-bg-tech: #0B0C10;
+  --color-bg-light: #F6F7FA;
+  --color-bg-neutral: #EDEDF2;
   --color-bg-card-dark: #121318;
   --color-border-dark: #26272E;
   --color-border-light: #E5E7EB;
@@ -14,8 +14,9 @@
   --color-text-dark: #111827;
   --color-text-muted-dark: #9CA3AF;
   --color-text-muted-light: #4B5563;
-  --color-accent: #FFFFFF;
+  --color-accent: #CEFF00;
   --color-accent-inverse: #000000;
+  --color-neon: #CEFF00;
 }
 
 *, *::before, *::after {

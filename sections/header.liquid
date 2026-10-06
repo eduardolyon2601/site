@@ -1,9 +1,38 @@
-<header class="kosnora-header">
+<!-- Announcement Marquee Bar with Electric Purple Ambience -->
+<div style="width: 100%; background: #120F1D; color: #FFFFFF; font-weight: 800; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; overflow: hidden; padding: 8px 0; border-bottom: 1px solid rgba(168, 85, 247, 0.3); white-space: nowrap;">
+  <div style="display: inline-block; animation: marquee 24s linear infinite;">
+    <span style="margin: 0 1.25rem;">SAME PHONE. DIFFERENT ENERGY.</span> •
+    <span style="margin: 0 1.25rem; color: #C084FC;">⚡ BATTERY-FREE PASSIVE NFC DISPLAY</span> •
+    <span style="margin: 0 1.25rem;">REFRESH YOUR LOOK IN 5 MINUTES</span> •
+    <span style="margin: 0 1.25rem; color: #C084FC;">⚡ DROP-TESTED COMPOSITE ARMOR</span> •
+    <span style="margin: 0 1.25rem;">KOSNORA™ LIMITED DROP</span> •
+    <span style="margin: 0 1.25rem;">SAME PHONE. DIFFERENT ENERGY.</span> •
+    <span style="margin: 0 1.25rem; color: #C084FC;">⚡ BATTERY-FREE PASSIVE NFC DISPLAY</span> •
+  </div>
+</div>
+
+<header class="kosnora-header" style="background: rgba(0, 0, 0, 0.95); border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
   <div class="kosnora-container" style="width: 100%;">
     <div class="kosnora-header-inner">
-      <!-- Logo Wordmark in Montserrat -->
-      <a href="{{ routes.root_url | default: '/' }}" class="kosnora-logo">
-        {{ section.settings.brand_name | default: 'KOSNORA' }}
+      <!-- Official KNR + KOSNORA Brand Lockup -->
+      <a href="{{ routes.root_url | default: '/' }}" class="kosnora-logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+        <span style="position: relative; display: inline-flex; align-items: center; justify-content: center;">
+          <svg viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 27px; filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.45));">
+            <defs>
+              <linearGradient id="knrPurpleHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#D8B4FE" />
+                <stop offset="40%" stop-color="#A855F7" />
+                <stop offset="100%" stop-color="#6B21A8" />
+              </linearGradient>
+            </defs>
+            <path d="M4 6H12V22L24 6H33L19 24L34 42H24L12 26V42H4V6Z" fill="url(#knrPurpleHeader)" />
+            <path d="M25 6H33L47 31V6H55V42H47L33 17V42H25V6Z" fill="url(#knrPurpleHeader)" opacity="0.9" />
+            <path d="M42 6H56C61 6 64 9 64 14C64 18 61 21 57 22L64 42H55L49 24H49V42H42V6ZM49 18H55C56.5 18 57.5 17 57.5 14C57.5 11 56.5 10 55 10H49V18Z" fill="url(#knrPurpleHeader)" />
+          </svg>
+        </span>
+        <span style="font-size: 1.35rem; font-weight: 900; letter-spacing: 0.22em; color: #FFFFFF; text-transform: uppercase;">
+          {{ section.settings.brand_name | default: 'KOSNORA' }}
+        </span>
       </a>
 
       <!-- Desktop Navigation -->
@@ -13,16 +42,17 @@
             <a href="{{ link.url }}" class="kosnora-nav-link">{{ link.title }}</a>
           {%- endfor -%}
         {%- else -%}
-          <a href="#how-it-works" class="kosnora-nav-link">How It Works</a>
-          <a href="#benefits" class="kosnora-nav-link">Benefits</a>
-          <a href="#compatibility" class="kosnora-nav-link">Compatibility</a>
+          <a href="#pricing" class="kosnora-nav-link">SHOP</a>
+          <a href="#how-it-works" class="kosnora-nav-link">HOW IT WORKS</a>
+          <a href="#why-kosnora" class="kosnora-nav-link">WHY KOSNORA</a>
+          <a href="#compatibility" class="kosnora-nav-link">COMPATIBILITY</a>
           <a href="#faq" class="kosnora-nav-link">FAQ</a>
         {%- endif -%}
       </nav>
 
-      <!-- Primary Action -->
+      <!-- Primary Action with Electric Purple Button -->
       <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.75rem;">
+        <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.75rem; background: linear-gradient(135deg, #9333EA 0%, #A855F7 50%, #7E22CE 100%); color: #FFF; border: none; box-shadow: 0 0 18px rgba(168, 85, 247, 0.4);">
           {{ section.settings.cta_label | default: 'SHOP NOW' }}
         </button>
       </div>

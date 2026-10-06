@@ -1,12 +1,28 @@
-<footer class="section-dark" style="border-top: 1px solid #1E2026; padding: 4.5rem 0 3rem; color: #9CA3AF;">
+<footer class="section-dark" style="border-top: 2px solid #1E1A29; padding: 4.5rem 0 3rem; color: #9CA3AF; background: #000;">
   <div class="kosnora-container">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; padding-bottom: 3.5rem; border-bottom: 1px solid #1E2026;">
-      <!-- Brand Column -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; padding-bottom: 3.5rem; border-bottom: 1px solid #1E1A29;">
+      <!-- Brand Column with KNR Symbol -->
       <div>
-        <a href="{{ routes.root_url | default: '/' }}" class="kosnora-logo" style="display: inline-block; margin-bottom: 1rem;">
-          {{ section.settings.brand_name | default: 'KOSNORA' }}
+        <a href="{{ routes.root_url | default: '/' }}" class="kosnora-logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem; text-decoration: none;">
+          <span style="position: relative; display: inline-flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 27px; filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.45));">
+              <defs>
+                <linearGradient id="knrPurpleFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#D8B4FE" />
+                  <stop offset="40%" stop-color="#A855F7" />
+                  <stop offset="100%" stop-color="#6B21A8" />
+                </linearGradient>
+              </defs>
+              <path d="M4 6H12V22L24 6H33L19 24L34 42H24L12 26V42H4V6Z" fill="url(#knrPurpleFooter)" />
+              <path d="M25 6H33L47 31V6H55V42H47L33 17V42H25V6Z" fill="url(#knrPurpleFooter)" opacity="0.9" />
+              <path d="M42 6H56C61 6 64 9 64 14C64 18 61 21 57 22L64 42H55L49 24H49V42H42V6ZM49 18H55C56.5 18 57.5 17 57.5 14C57.5 11 56.5 10 55 10H49V18Z" fill="url(#knrPurpleFooter)" />
+            </svg>
+          </span>
+          <span style="font-size: 1.35rem; font-weight: 900; letter-spacing: 0.22em; color: #FFFFFF; text-transform: uppercase;">
+            {{ section.settings.brand_name | default: 'KOSNORA' }}
+          </span>
         </a>
-        <p class="kosnora-subtitle" style="font-size: 0.95rem; color: #E5E7EB; margin-bottom: 0.75rem; font-weight: 600;">
+        <p class="kosnora-subtitle" style="font-size: 0.95rem; color: #E5E7EB; margin-bottom: 0.75rem; font-weight: 700; text-transform: uppercase;">
           Make your phone uniquely yours.
         </p>
         <p style="font-size: 0.8125rem; color: #9CA3AF; line-height: 1.6; max-width: 320px;">
@@ -16,10 +32,10 @@
 
       <!-- Quick Nav Links -->
       <div>
-        <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #FFF; margin-bottom: 1.25rem;">
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: #FFF; margin-bottom: 1.25rem;">
           Navigation
         </div>
-        <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.8125rem; font-weight: 500;">
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.8125rem; font-weight: 600;">
           <a href="#how-it-works" style="color: #9CA3AF; text-decoration: none;">How It Works</a>
           <a href="#benefits" style="color: #9CA3AF; text-decoration: none;">Benefits</a>
           <a href="#compatibility" style="color: #9CA3AF; text-decoration: none;">Compatibility</a>
@@ -29,7 +45,7 @@
 
       <!-- Policies & Legal -->
       <div>
-        <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #FFF; margin-bottom: 1.25rem;">
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: #FFF; margin-bottom: 1.25rem;">
           Customer Care
         </div>
         <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.8125rem;">
@@ -53,7 +69,7 @@
 
       <!-- Social Media Placeholders -->
       <div>
-        <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #FFF; margin-bottom: 1.25rem;">
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: #FFF; margin-bottom: 1.25rem;">
           Social Connect
         </div>
         <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8125rem; color: #9CA3AF;">
@@ -75,17 +91,17 @@
   </div>
 </footer>
 
-<!-- Mobile Sticky Bar Snippet inside footer layout -->
-<div class="mobile-sticky-bar">
+<!-- Mobile Sticky Bar Snippet with Electric Purple Styling -->
+<div class="mobile-sticky-bar" style="background: rgba(8, 9, 13, 0.98); border-top: 2px solid #1E1A29;">
   <div>
-    <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: #9CA3AF;">
-      KOSNORA Case
+    <div style="font-size: 10px; font-weight: 800; text-transform: uppercase; color: #C084FC; letter-spacing: 0.08em;">
+      KOSNORA Smart Case
     </div>
-    <div style="font-size: 1rem; font-weight: 800; color: #FFF;">
+    <div style="font-size: 1rem; font-weight: 900; color: #FFF;">
       $79.90
     </div>
   </div>
-  <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.75rem;">
+  <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="padding: 0.65rem 1.35rem; font-size: 0.75rem; background: linear-gradient(135deg, #9333EA 0%, #A855F7 100%); color: #FFF; border: none; box-shadow: 0 0 14px rgba(168, 85, 247, 0.4);">
     <span>GET MINE</span>
     {% render 'icon-arrow-right' %}
   </button>

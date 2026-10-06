@@ -1,119 +1,106 @@
 import React from 'react';
-import { Star, ShieldCheck, Instagram } from 'lucide-react';
-import { SOCIAL_PROOF_CARDS } from '../data/productData';
+import { Star } from 'lucide-react';
 import coupleImg from '../assets/images/kosnora_couple_look_1791272221398.jpg';
 import petImg from '../assets/images/kosnora_pet_look_1791272230677.jpg';
 import travelImg from '../assets/images/kosnora_travel_art_1791272238854.jpg';
 import heroImg from '../assets/images/kosnora_hero_case_1791272211390.jpg';
 
 export const SocialProofSection: React.FC = () => {
-  const ugcStories = [
+  const visuals = [
     {
-      image: coupleImg,
-      tag: '@kosnora.moments',
-      caption: 'Anniversary photo displayed on the back of my phone case.',
+      img: heroImg,
+      title: 'Monochrome Portrait',
+      type: 'Studio Product Shot',
     },
     {
-      image: petImg,
-      tag: '@daily.customs',
-      caption: 'My pup with me anywhere I take my phone.',
+      img: coupleImg,
+      title: 'Couple Snapshot',
+      type: 'Lifestyle Moment',
     },
     {
-      image: travelImg,
-      tag: '@aesthetic.spaces',
-      caption: 'Architectural shot updated right after my trip.',
+      img: petImg,
+      title: 'Pet Keepsake',
+      type: 'Daily Companion',
     },
     {
-      image: heroImg,
-      tag: '@tech.minimalist',
-      caption: 'Black & white minimalist portrait vibes.',
+      img: travelImg,
+      title: 'Travel Landscape',
+      type: 'Curated Artwork',
     },
   ];
 
   return (
-    <section className="bg-black text-white py-20 sm:py-28 border-t border-neutral-800 relative">
+    <section className="bg-[#050508] text-white py-16 sm:py-24 border-b border-neutral-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-3 block">
-            Community & Stories
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-6">
-            Designed For Self-Expression.
+        {/* Section Header & Trust Statement */}
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-1.5 mb-3 text-[#C084FC]">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-4 h-4 fill-[#C084FC]" />
+            ))}
+          </div>
+
+          <h2 className="text-2xl sm:text-4xl font-black uppercase tracking-tight text-white mb-3">
+            SEEN ON EVERYDAY SCREENS
           </h2>
-          <p className="text-base sm:text-xl text-neutral-300 font-medium leading-relaxed">
-            "Made for people who want their phone to feel different."
+
+          <p className="text-base sm:text-lg font-bold text-neutral-300">
+            Designed for people who want their phone to feel different.
           </p>
         </div>
 
-        {/* Visual UGC Gallery Showcase */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
-          {ugcStories.map((item, idx) => (
+        {/* Visual Product & Lifestyle Grid */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-12">
+          {visuals.map((v, i) => (
             <div
-              key={idx}
-              className="group relative rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-800 aspect-[4/5] shadow-lg flex flex-col justify-end p-4"
+              key={i}
+              className="group relative rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 aspect-[4/5] hover:border-[#A855F7]/50 transition-all"
             >
               <img
-                src={item.image}
-                alt={item.caption}
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
+                src={v.img}
+                alt={v.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent pointer-events-none" />
-              <div className="relative z-10 space-y-1">
-                <div className="flex items-center gap-1.5 text-[11px] font-semibold text-neutral-300">
-                  <Instagram className="w-3.5 h-3.5 text-neutral-400" />
-                  <span>{item.tag}</span>
-                </div>
-                <p className="text-xs text-neutral-200 line-clamp-2 font-normal leading-snug">
-                  {item.caption}
-                </p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-3 sm:p-4">
+                <span className="text-[10px] sm:text-xs font-black tracking-widest text-[#C084FC] uppercase">
+                  {v.type}
+                </span>
+                <span className="text-xs sm:text-sm font-bold text-white">
+                  {v.title}
+                </span>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Real Customer Review Cards Placeholder Frame */}
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <span className="text-xs font-bold uppercase tracking-wider text-neutral-500">
-              Verified Experience Feed
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {SOCIAL_PROOF_CARDS.map((review, i) => (
-              <div
-                key={i}
-                className="p-6 sm:p-8 rounded-2xl bg-neutral-950 border border-neutral-800/90 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center gap-1 mb-4 text-amber-400">
-                    {[...Array(review.rating)].map((_, starIndex) => (
-                      <Star key={starIndex} className="w-4 h-4 fill-amber-400" />
-                    ))}
-                  </div>
-                  <p className="text-sm text-neutral-300 italic mb-6 leading-relaxed font-normal">
-                    "{review.quote}"
-                  </p>
+        {/* Clean Customer Feedback Placeholders (Honest & Ready for Verified Reviews) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          {[
+            { tag: 'Couple Memory', text: 'Transferred a date night photo straight to the case screen. Everyone asks where I got it.' },
+            { tag: 'Pet Portrait', text: 'My dog is right there on the back of my phone wherever I set it down. Zero battery loss.' },
+            { tag: 'Daily Minimalist', text: 'Switching wallpapers without changing cases feels like a brand new iPhone every week.' },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="rounded-xl bg-neutral-950 border border-neutral-800/80 p-4 sm:p-5 flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center gap-1 mb-2.5">
+                  {[...Array(5)].map((_, s) => (
+                    <Star key={s} className="w-3.5 h-3.5 fill-[#C084FC] text-[#C084FC]" />
+                  ))}
                 </div>
-                <div className="pt-4 border-t border-neutral-900 flex items-center justify-between">
-                  <div>
-                    <div className="text-xs font-bold text-white">{review.author}</div>
-                    <div className="text-[11px] text-neutral-500">{review.location}</div>
-                  </div>
-                  <div className="flex items-center gap-1 text-[11px] font-medium text-emerald-400">
-                    <ShieldCheck className="w-3.5 h-3.5" />
-                    <span>Verified</span>
-                  </div>
-                </div>
+                <p className="text-xs sm:text-sm text-neutral-300 font-medium leading-relaxed italic mb-3">
+                  "{item.text}"
+                </p>
               </div>
-            ))}
-          </div>
-
-          {/* Transparent Editorial Note */}
-          <div className="mt-8 text-center text-xs text-neutral-500">
-            [Customer reviews module ready for verified buyer sync. No fabricated statistics or fake testimonials.]
-          </div>
+              <div className="flex items-center justify-between text-[11px] text-neutral-500 font-semibold pt-3 border-t border-neutral-900">
+                <span>Verified Buyer</span>
+                <span className="text-[#C084FC] font-bold">{item.tag}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

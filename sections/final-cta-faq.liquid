@@ -1,0 +1,128 @@
+<section id="faq" class="section-dark" style="background: #050508; padding: 4.5rem 0; border-bottom: 1px solid #1E2026; color: #FFF;">
+  <div class="kosnora-container" style="max-width: 800px;">
+    <!-- Final CTA Card -->
+    <div style="background: #0A0A0E; border: 1px solid #27272A; border-radius: 24px; padding: 3rem 2rem; text-align: center; margin-bottom: 4rem; position: relative; overflow: hidden; box-shadow: 0 0 40px rgba(168, 85, 247, 0.1);">
+      <h2 style="font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+        {{ section.settings.cta_headline | default: 'MAKE YOUR PHONE YOURS.' }}
+      </h2>
+      <p style="font-size: 1.15rem; color: #D4D4D8; font-weight: 700; margin-bottom: 2rem;">
+        {{ section.settings.cta_subtitle | default: 'Change your look whenever you want.' }}
+      </p>
+      <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="background: linear-gradient(135deg, #9333EA 0%, #A855F7 50%, #7E22CE 100%); box-shadow: 0 0 25px rgba(168, 85, 247, 0.45); padding: 1.15rem 2.75rem; font-size: 0.875rem;">
+        <span>{{ section.settings.cta_button | default: 'GET YOUR KOSNORA' }}</span>
+        {% render 'icon-arrow-right' %}
+      </button>
+    </div>
+
+    <!-- Compact FAQ -->
+    <div>
+      <div style="text-align: center; margin-bottom: 2.5rem;">
+        <span style="font-size: 11px; font-weight: 900; letter-spacing: 0.15em; text-transform: uppercase; color: #C084FC; display: block; margin-bottom: 0.5rem;">
+          QUESTIONS & ANSWERS
+        </span>
+        <h3 style="font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 900; text-transform: uppercase; margin: 0;">
+          FREQUENTLY ASKED
+        </h3>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <!-- Q1 -->
+        <details class="faq-accordion-item" style="background: #0A0A0E; border: 1px solid #27272A; border-radius: 12px; padding: 1rem 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 800; font-size: 0.95rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #FFF;">
+            <span>How does it work?</span>
+            <span style="color: #C084FC; font-weight: 900;">+</span>
+          </summary>
+          <p style="margin-top: 0.75rem; font-size: 0.8125rem; color: #A1A1AA; font-weight: 500; line-height: 1.6; border-top: 1px solid #1E2026; padding-top: 0.75rem;">
+            The KOSNORA case features a battery-free smart display on the back. It receives your selected picture from your phone via passive NFC in seconds. The image stays on display indefinitely without using power.
+          </p>
+        </details>
+
+        <!-- Q2 -->
+        <details class="faq-accordion-item" style="background: #0A0A0E; border: 1px solid #27272A; border-radius: 12px; padding: 1rem 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 800; font-size: 0.95rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #FFF;">
+            <span>Can I use my own picture?</span>
+            <span style="color: #C084FC; font-weight: 900;">+</span>
+          </summary>
+          <p style="margin-top: 0.75rem; font-size: 0.8125rem; color: #A1A1AA; font-weight: 500; line-height: 1.6; border-top: 1px solid #1E2026; padding-top: 0.75rem;">
+            Yes. You can use any photo from your phone gallery — portraits, couple shots, pets, wallpapers, or custom artwork.
+          </p>
+        </details>
+
+        <!-- Q3 -->
+        <details class="faq-accordion-item" style="background: #0A0A0E; border: 1px solid #27272A; border-radius: 12px; padding: 1rem 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 800; font-size: 0.95rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #FFF;">
+            <span>Does it need a battery?</span>
+            <span style="color: #C084FC; font-weight: 900;">+</span>
+          </summary>
+          <p style="margin-top: 0.75rem; font-size: 0.8125rem; color: #A1A1AA; font-weight: 500; line-height: 1.6; border-top: 1px solid #1E2026; padding-top: 0.75rem;">
+            No. The case is 100% battery-free. It requires no charging, cables, or internal battery. Your phone also does not drain power.
+          </p>
+        </details>
+
+        <!-- Q4 -->
+        <details class="faq-accordion-item" style="background: #0A0A0E; border: 1px solid #27272A; border-radius: 12px; padding: 1rem 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 800; font-size: 0.95rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #FFF;">
+            <span>Which iPhone models are supported?</span>
+            <span style="color: #C084FC; font-weight: 900;">+</span>
+          </summary>
+          <p style="margin-top: 0.75rem; font-size: 0.8125rem; color: #A1A1AA; font-weight: 500; line-height: 1.6; border-top: 1px solid #1E2026; padding-top: 0.75rem;">
+            KOSNORA supports iPhone 17, 16, 15, 14, and 12 series, including Pro and Pro Max models. Select your model before ordering.
+          </p>
+        </details>
+
+        <!-- Q5 -->
+        <details class="faq-accordion-item" style="background: #0A0A0E; border: 1px solid #27272A; border-radius: 12px; padding: 1rem 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 800; font-size: 0.95rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #FFF;">
+            <span>How do I customize it?</span>
+            <span style="color: #C084FC; font-weight: 900;">+</span>
+          </summary>
+          <p style="margin-top: 0.75rem; font-size: 0.8125rem; color: #A1A1AA; font-weight: 500; line-height: 1.6; border-top: 1px solid #1E2026; padding-top: 0.75rem;">
+            Choose your picture, align the frame on your phone, and hold it near the case. The image updates in under 5 minutes.
+          </p>
+        </details>
+
+        <!-- Q6 -->
+        <details class="faq-accordion-item" style="background: #0A0A0E; border: 1px solid #27272A; border-radius: 12px; padding: 1rem 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 800; font-size: 0.95rem; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #FFF;">
+            <span>How long does shipping take?</span>
+            <span style="color: #C084FC; font-weight: 900;">+</span>
+          </summary>
+          <p style="margin-top: 0.75rem; font-size: 0.8125rem; color: #A1A1AA; font-weight: 500; line-height: 1.6; border-top: 1px solid #1E2026; padding-top: 0.75rem;">
+            Orders are processed within 24–48 hours. Standard US delivery typically arrives in 3–7 business days with tracking included.
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Final CTA + FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cta_headline",
+      "label": "CTA Headline",
+      "default": "MAKE YOUR PHONE YOURS."
+    },
+    {
+      "type": "text",
+      "id": "cta_subtitle",
+      "label": "CTA Subtitle",
+      "default": "Change your look whenever you want."
+    },
+    {
+      "type": "text",
+      "id": "cta_button",
+      "label": "CTA Button",
+      "default": "GET YOUR KOSNORA"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Final CTA + FAQ"
+    }
+  ]
+}
+{% endschema %}
