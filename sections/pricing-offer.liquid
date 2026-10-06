@@ -1,0 +1,271 @@
+<section id="pricing" class="section-light kosnora-py" style="border-top: 1px solid #E5E7EB;">
+  <div class="kosnora-container">
+    <!-- Header -->
+    <div style="max-width: 760px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+      <span class="kosnora-kicker-badge light">
+        {{ section.settings.kicker | default: 'Exclusive Packages' }}
+      </span>
+      <h2 class="kosnora-headline" style="font-size: clamp(2rem, 4.5vw, 3.5rem); color: #111827; margin-bottom: 1.25rem;">
+        {{ section.settings.headline | default: 'Choose Your KOSNORA Experience' }}
+      </h2>
+      <p class="kosnora-subtitle" style="font-size: 1.125rem; color: #4B5563;">
+        {{ section.settings.description | default: 'Order for yourself or bundle with a partner or friend. Every case is crafted with the battery-free smart NFC display.' }}
+      </p>
+    </div>
+
+    <!-- 3 Pricing Cards -->
+    <div class="kosnora-grid-3" style="max-width: 1100px; margin: 0 auto 5rem; align-items: stretch;">
+      <!-- 1 Case -->
+      <div class="pricing-card standard">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem;">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: #6B7280; text-transform: uppercase;">
+              1 CASE
+            </span>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <div style="font-size: 3rem; font-weight: 800; color: #111827; line-height: 1;">
+              $79.90
+            </div>
+            <div style="font-size: 12px; color: #6B7280; margin-top: 4px;">
+              Standard single case price
+            </div>
+          </div>
+
+          <p style="font-size: 0.875rem; color: #4B5563; font-weight: 500; margin-bottom: 1.5rem;">
+            1 KOSNORA Smart Phone Case
+          </p>
+
+          <div style="border-top: 1px solid #E5E7EB; padding-top: 1rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>KOSNORA Smart Phone Case</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>Customizable image display</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>Battery-free design</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>Protective phone case structure</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" data-open-drawer data-qty="1" class="kosnora-btn-dark" style="width: 100%;">
+          <span>GET 1 CASE</span>
+          {% render 'icon-arrow-right' %}
+        </button>
+      </div>
+
+      <!-- 2 Cases (Popular) -->
+      <div class="pricing-card popular" style="position: relative;">
+        <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #111827; color: #FFF; font-size: 10px; font-weight: 800; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 9999px; text-transform: uppercase;">
+          MOST POPULAR · SAVE $20
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem;">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: #111827; text-transform: uppercase;">
+              2 CASES
+            </span>
+            <span style="font-size: 11px; font-weight: 700; color: #059669; background: #ECFDF5; padding: 2px 8px; border-radius: 4px;">
+              Save $20 total
+            </span>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <div style="display: flex; align-items: baseline; gap: 4px;">
+              <span style="font-size: 3rem; font-weight: 800; color: #111827; line-height: 1;">$69.90</span>
+              <span style="font-size: 0.875rem; color: #6B7280; font-weight: 600;">/ each</span>
+            </div>
+            <div style="font-size: 13px; font-weight: 700; color: #111827; margin-top: 4px;">
+              $139.80 total
+            </div>
+            <div style="font-size: 12px; color: #059669; font-weight: 600;">
+              Save $20 per case
+            </div>
+          </div>
+
+          <p style="font-size: 0.875rem; color: #4B5563; font-weight: 500; margin-bottom: 1.5rem;">
+            2 KOSNORA Smart Phone Cases
+          </p>
+
+          <div style="border-top: 1px solid #E5E7EB; padding-top: 1rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>KOSNORA Smart Phone Case</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>Customizable image display</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>Battery-free design</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #374151;">
+              {% render 'icon-check' %} <span>Protective phone case structure</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-dark" style="width: 100%; background: #000; border-color: #000;">
+          <span>GET 2 CASES</span>
+          {% render 'icon-arrow-right' %}
+        </button>
+      </div>
+
+      <!-- 3 Cases (Best Value) -->
+      <div class="pricing-card best-value" style="position: relative;">
+        <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #FFFFFF; color: #000; font-size: 10px; font-weight: 800; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 9999px; text-transform: uppercase;">
+          BEST VALUE · SAVE $60
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem;">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: #9CA3AF; text-transform: uppercase;">
+              3 CASES
+            </span>
+            <span style="font-size: 11px; font-weight: 700; color: #34D399; background: #064E3B; padding: 2px 8px; border-radius: 4px;">
+              Save $60 total
+            </span>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <div style="display: flex; align-items: baseline; gap: 4px;">
+              <span style="font-size: 3rem; font-weight: 800; color: #FFFFFF; line-height: 1;">$59.90</span>
+              <span style="font-size: 0.875rem; color: #9CA3AF; font-weight: 600;">/ each</span>
+            </div>
+            <div style="font-size: 13px; font-weight: 700; color: #FFFFFF; margin-top: 4px;">
+              $179.70 total
+            </div>
+            <div style="font-size: 12px; color: #34D399; font-weight: 600;">
+              Save $20 per case
+            </div>
+          </div>
+
+          <p style="font-size: 0.875rem; color: #D1D5DB; font-weight: 500; margin-bottom: 1.5rem;">
+            3 KOSNORA Smart Phone Cases
+          </p>
+
+          <div style="border-top: 1px solid #22232A; padding-top: 1rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #D1D5DB;">
+              {% render 'icon-check' %} <span>KOSNORA Smart Phone Case</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #D1D5DB;">
+              {% render 'icon-check' %} <span>Customizable image display</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #D1D5DB;">
+              {% render 'icon-check' %} <span>Battery-free design</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #D1D5DB;">
+              {% render 'icon-check' %} <span>Protective phone case structure</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" data-open-drawer data-qty="3" class="kosnora-btn-primary" style="width: 100%;">
+          <span>GET 3 CASES</span>
+          {% render 'icon-arrow-right' %}
+        </button>
+      </div>
+    </div>
+
+    <!-- What's Included & Compatibility Grid -->
+    <div id="compatibility" style="max-width: 1100px; margin: 0 auto 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+      <!-- What's Included -->
+      <div class="kosnora-card-light">
+        <h3 class="kosnora-title" style="font-size: 1.25rem; color: #111827; margin-bottom: 1rem; text-transform: uppercase;">
+          What's Included
+        </h3>
+        <p style="font-size: 0.8125rem; color: #6B7280; margin-bottom: 1.5rem;">
+          Everything you need to start personalizing the back of your phone straight out of the box:
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: #1F2937; font-weight: 500;">
+            <span style="width: 20px; height: 20px; border-radius: 50%; background: #F3F4F6; display: flex; align-items: center; justify-content: center;">{% render 'icon-check' %}</span>
+            <span>KOSNORA Smart Phone Case</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: #1F2937; font-weight: 500;">
+            <span style="width: 20px; height: 20px; border-radius: 50%; background: #F3F4F6; display: flex; align-items: center; justify-content: center;">{% render 'icon-check' %}</span>
+            <span>Customizable image display</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: #1F2937; font-weight: 500;">
+            <span style="width: 20px; height: 20px; border-radius: 50%; background: #F3F4F6; display: flex; align-items: center; justify-content: center;">{% render 'icon-check' %}</span>
+            <span>Battery-free design</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: #1F2937; font-weight: 500;">
+            <span style="width: 20px; height: 20px; border-radius: 50%; background: #F3F4F6; display: flex; align-items: center; justify-content: center;">{% render 'icon-check' %}</span>
+            <span>Protective phone case structure</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compatible iPhone Models -->
+      <div class="kosnora-card-light">
+        <h3 class="kosnora-title" style="font-size: 1.25rem; color: #111827; margin-bottom: 1rem; text-transform: uppercase;">
+          Compatible iPhone Models
+        </h3>
+        <p style="font-size: 0.8125rem; color: #6B7280; margin-bottom: 1.5rem;">
+          Engineered for precision fit with the following models:
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 12px; font-weight: 600; color: #374151;">
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 17 Pro Max</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 17 Pro</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 17</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 16 Pro Max</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 16 Pro</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 16 Plus</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 16</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 15 Pro Max</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 15 Pro</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 15</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 14 Pro Max</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 14</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 12 Pro Max</span>
+          <span style="padding: 6px 12px; border-radius: 8px; background: #F3F4F6; border: 1px solid #E5E7EB;">iPhone 12</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shop With Confidence / Warranty Placeholder -->
+    <div style="max-width: 900px; margin: 0 auto; background: #F3F4F6; border: 1px solid #E5E7EB; border-radius: 1.25rem; padding: 2rem; text-align: center;">
+      <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.15em; color: #111827; text-transform: uppercase; margin-bottom: 0.5rem;">
+        SHOP WITH CONFIDENCE
+      </div>
+      <p style="font-size: 0.875rem; color: #4B5563; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+        [Insert actual return/refund guarantee here. Every KOSNORA smart phone case undergoes rigorous quality control and inspection before leaving our distribution center.]
+      </p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pricing Offer Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Exclusive Packages"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Choose Your KOSNORA Experience"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Order for yourself or bundle with a partner or friend. Every case is crafted with the battery-free smart NFC display."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing Offer Section"
+    }
+  ]
+}
+{% endschema %}

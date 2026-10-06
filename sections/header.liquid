@@ -1,0 +1,56 @@
+<header class="kosnora-header">
+  <div class="kosnora-container" style="width: 100%;">
+    <div class="kosnora-header-inner">
+      <!-- Logo Wordmark in Montserrat -->
+      <a href="{{ routes.root_url | default: '/' }}" class="kosnora-logo">
+        {{ section.settings.brand_name | default: 'KOSNORA' }}
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="kosnora-nav" aria-label="Main Navigation">
+        {%- if section.settings.menu != blank -%}
+          {%- for link in section.settings.menu.links -%}
+            <a href="{{ link.url }}" class="kosnora-nav-link">{{ link.title }}</a>
+          {%- endfor -%}
+        {%- else -%}
+          <a href="#how-it-works" class="kosnora-nav-link">How It Works</a>
+          <a href="#benefits" class="kosnora-nav-link">Benefits</a>
+          <a href="#compatibility" class="kosnora-nav-link">Compatibility</a>
+          <a href="#faq" class="kosnora-nav-link">FAQ</a>
+        {%- endif -%}
+      </nav>
+
+      <!-- Primary Action -->
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.75rem;">
+          {{ section.settings.cta_label | default: 'SHOP NOW' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand Name",
+      "default": "KOSNORA"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Button Label",
+      "default": "SHOP NOW"
+    }
+  ]
+}
+{% endschema %}

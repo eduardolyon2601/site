@@ -1,0 +1,138 @@
+<section id="how-it-works" class="section-tech kosnora-py" style="border-top: 1px solid #1E2026; position: relative;">
+  <div class="kosnora-container">
+    <!-- Header -->
+    <div style="max-width: 760px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+      <span class="kosnora-kicker-badge">
+        {{ section.settings.kicker | default: 'The Solution' }}
+      </span>
+      <h2 class="kosnora-headline" style="font-size: clamp(2rem, 4.5vw, 3.5rem); color: #FFF; margin-bottom: 1.25rem;">
+        {{ section.settings.headline | default: 'One Case. Endless Possibilities.' }}
+      </h2>
+      <p class="kosnora-subtitle" style="font-size: 1.125rem; color: #D1D5DB;">
+        {{ section.settings.description | default: 'The KOSNORA Smart Case transforms the back of your iPhone into a personalized visual canvas that changes as often as you do.' }}
+      </p>
+    </div>
+
+    <!-- Product Feature Box with Image -->
+    <div style="background: #121318; border: 1px solid #26272E; border-radius: 1.75rem; padding: 2.5rem; margin-bottom: 4rem; overflow: hidden;">
+      <div class="kosnora-grid-2">
+        <div style="border-radius: 1.25rem; overflow: hidden; border: 1px solid #2A2C35;">
+          <img src="{{ 'kosnora_hero_case.jpg' | asset_url }}" alt="KOSNORA Smart Phone Case" style="width: 100%; height: auto; display: block; object-fit: cover;">
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 8px; background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.3); color: #34D399; font-size: 11px; font-weight: 700; text-transform: uppercase; width: fit-content; margin-bottom: 1rem;">
+            <span>Zero Charging · Zero Internal Batteries</span>
+          </div>
+
+          <h3 class="kosnora-title" style="font-size: 2rem; color: #FFF; margin-bottom: 1rem;">
+            No battery required.
+          </h3>
+
+          <p style="font-size: 0.95rem; color: #D1D5DB; line-height: 1.6; margin-bottom: 2rem;">
+            Using passive NFC technology, the KOSNORA smart screen draws zero standby power. The case does not require any battery, charging dock, or cords. Once you beam your image onto the screen, it stays vibrant and permanent until you choose your next picture.
+          </p>
+
+          <div>
+            <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary">
+              <span>{{ section.settings.cta_label | default: 'CREATE MY LOOK' }}</span>
+              {% render 'icon-arrow-right' %}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Step Process Cards -->
+    <div class="kosnora-grid-4">
+      <!-- Step 1 -->
+      <div class="kosnora-card-dark">
+        <div style="font-size: 11px; font-weight: 800; color: #9CA3AF; letter-spacing: 0.1em; margin-bottom: 1rem;">
+          STEP 1
+        </div>
+        <h4 class="kosnora-title" style="font-size: 1.125rem; color: #FFF; margin-bottom: 0.5rem;">
+          Choose your image
+        </h4>
+        <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5;">
+          Choose the photo or design you want to display.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="kosnora-card-dark">
+        <div style="font-size: 11px; font-weight: 800; color: #9CA3AF; letter-spacing: 0.1em; margin-bottom: 1rem;">
+          STEP 2
+        </div>
+        <h4 class="kosnora-title" style="font-size: 1.125rem; color: #FFF; margin-bottom: 0.5rem;">
+          Set it up
+        </h4>
+        <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5;">
+          Follow the simple setup process.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="kosnora-card-dark">
+        <div style="font-size: 11px; font-weight: 800; color: #9CA3AF; letter-spacing: 0.1em; margin-bottom: 1rem;">
+          STEP 3
+        </div>
+        <h4 class="kosnora-title" style="font-size: 1.125rem; color: #FFF; margin-bottom: 0.5rem;">
+          Enjoy your new look
+        </h4>
+        <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5;">
+          Have a completely different look on your phone.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="kosnora-card-dark">
+        <div style="font-size: 11px; font-weight: 800; color: #9CA3AF; letter-spacing: 0.1em; margin-bottom: 1rem;">
+          STEP 4
+        </div>
+        <h4 class="kosnora-title" style="font-size: 1.125rem; color: #FFF; margin-bottom: 0.5rem;">
+          Change it whenever you want
+        </h4>
+        <p style="font-size: 0.875rem; color: #9CA3AF; line-height: 1.5;">
+          Switch your image whenever your mood or style changes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Solution Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "The Solution"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "One Case. Endless Possibilities."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "The KOSNORA Smart Case transforms the back of your iPhone into a personalized visual canvas that changes as often as you do."
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA Button",
+      "default": "CREATE MY LOOK"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Solution Section"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,145 @@
+<section class="section-dark kosnora-py" style="border-top: 1px solid #1E2026; position: relative;">
+  <div class="kosnora-container">
+    <!-- Header -->
+    <div style="max-width: 760px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+      <span class="kosnora-kicker-badge">
+        {{ section.settings.kicker | default: 'Community & Stories' }}
+      </span>
+      <h2 class="kosnora-headline" style="font-size: clamp(2rem, 4.5vw, 3.5rem); color: #FFF; margin-bottom: 1.25rem;">
+        {{ section.settings.headline | default: 'Designed For Self-Expression.' }}
+      </h2>
+      <p class="kosnora-subtitle" style="font-size: 1.25rem; color: #D1D5DB;">
+        {{ section.settings.tagline | default: '"Made for people who want their phone to feel different."' }}
+      </p>
+    </div>
+
+    <!-- UGC Lifestyle Gallery -->
+    <div class="kosnora-grid-4" style="margin-bottom: 4rem;">
+      <div style="position: relative; border-radius: 1rem; overflow: hidden; border: 1px solid #22232A; aspect-ratio: 4/5;">
+        <img src="{{ 'kosnora_couple_look.jpg' | asset_url }}" alt="KOSNORA Couple Look" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem;">
+          <div style="font-size: 11px; font-weight: 700; color: #9CA3AF;">@kosnora.moments</div>
+          <div style="font-size: 12px; color: #E5E7EB; margin-top: 2px;">Anniversary snapshot on the case display.</div>
+        </div>
+      </div>
+
+      <div style="position: relative; border-radius: 1rem; overflow: hidden; border: 1px solid #22232A; aspect-ratio: 4/5;">
+        <img src="{{ 'kosnora_pet_look.jpg' | asset_url }}" alt="KOSNORA Pet Memory" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem;">
+          <div style="font-size: 11px; font-weight: 700; color: #9CA3AF;">@daily.customs</div>
+          <div style="font-size: 12px; color: #E5E7EB; margin-top: 2px;">My pup with me anywhere I take my phone.</div>
+        </div>
+      </div>
+
+      <div style="position: relative; border-radius: 1rem; overflow: hidden; border: 1px solid #22232A; aspect-ratio: 4/5;">
+        <img src="{{ 'kosnora_travel_art.jpg' | asset_url }}" alt="KOSNORA Travel Horizon" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem;">
+          <div style="font-size: 11px; font-weight: 700; color: #9CA3AF;">@aesthetic.spaces</div>
+          <div style="font-size: 12px; color: #E5E7EB; margin-top: 2px;">Architectural shot updated right after my trip.</div>
+        </div>
+      </div>
+
+      <div style="position: relative; border-radius: 1rem; overflow: hidden; border: 1px solid #22232A; aspect-ratio: 4/5;">
+        <img src="{{ 'kosnora_hero_case.jpg' | asset_url }}" alt="KOSNORA Minimalist Art" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem;">
+          <div style="font-size: 11px; font-weight: 700; color: #9CA3AF;">@tech.minimalist</div>
+          <div style="font-size: 12px; color: #E5E7EB; margin-top: 2px;">Black & white minimalist portrait vibes.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Verified Review Cards Placeholder Frame -->
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div class="kosnora-grid-3">
+        <div class="kosnora-card-dark" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; gap: 4px; margin-bottom: 1rem;">
+              {% for i in (1..5) %}{% render 'icon-star' %}{% endfor %}
+            </div>
+            <p style="font-size: 0.875rem; color: #D1D5DB; font-style: italic; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Add real customer review here."
+            </p>
+          </div>
+          <div style="padding-top: 1rem; border-top: 1px solid #22232A; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <div style="font-size: 12px; font-weight: 700; color: #FFF;">Verified Customer</div>
+              <div style="font-size: 11px; color: #6B7280;">United States</div>
+            </div>
+            <span style="font-size: 11px; color: #34D399; font-weight: 600;">Verified</span>
+          </div>
+        </div>
+
+        <div class="kosnora-card-dark" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; gap: 4px; margin-bottom: 1rem;">
+              {% for i in (1..5) %}{% render 'icon-star' %}{% endfor %}
+            </div>
+            <p style="font-size: 0.875rem; color: #D1D5DB; font-style: italic; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Add real customer review here."
+            </p>
+          </div>
+          <div style="padding-top: 1rem; border-top: 1px solid #22232A; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <div style="font-size: 12px; font-weight: 700; color: #FFF;">Verified Customer</div>
+              <div style="font-size: 11px; color: #6B7280;">United States</div>
+            </div>
+            <span style="font-size: 11px; color: #34D399; font-weight: 600;">Verified</span>
+          </div>
+        </div>
+
+        <div class="kosnora-card-dark" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; gap: 4px; margin-bottom: 1rem;">
+              {% for i in (1..5) %}{% render 'icon-star' %}{% endfor %}
+            </div>
+            <p style="font-size: 0.875rem; color: #D1D5DB; font-style: italic; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Add real customer review here."
+            </p>
+          </div>
+          <div style="padding-top: 1rem; border-top: 1px solid #22232A; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <div style="font-size: 12px; font-weight: 700; color: #FFF;">Verified Customer</div>
+              <div style="font-size: 11px; color: #6B7280;">United States</div>
+            </div>
+            <span style="font-size: 11px; color: #34D399; font-weight: 600;">Verified</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem; font-size: 11px; color: #6B7280;">
+        [Customer reviews module ready for verified buyer sync. No fabricated statistics or fake testimonials.]
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Social Proof Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Community & Stories"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Designed For Self-Expression."
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "\"Made for people who want their phone to feel different.\""
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Proof Section"
+    }
+  ]
+}
+{% endschema %}

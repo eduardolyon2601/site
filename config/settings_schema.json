@@ -1,0 +1,59 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "KOSNORA Theme",
+    "theme_version": "1.0.0",
+    "theme_author": "KOSNORA",
+    "theme_documentation_url": "https://kosnora.com",
+    "theme_support_url": "https://kosnora.com"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_bg_dark",
+        "label": "Dark Background",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_bg_light",
+        "label": "Light Background",
+        "default": "#FAFAFA"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Accent Color",
+        "default": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "KOSNORA Theme strictly utilizes Montserrat across all weights and components."
+      }
+    ]
+  },
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram Handle",
+        "default": "@kosnora"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok",
+        "label": "TikTok Handle",
+        "default": "@kosnora"
+      }
+    ]
+  }
+]
