@@ -23,14 +23,14 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0f0f11;
+  background: #f4f4f5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2a2a30;
+  background: #d4d4d8;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f48;
+  background: #a1a1aa;
 }
 
 @keyframes marquee {

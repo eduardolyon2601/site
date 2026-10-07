@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Camera, RefreshCw, Upload, Heart, Dog, Mountain, Sparkles, Check, Zap, Shield, BatteryCharging } from 'lucide-react';
 import { PRODUCT_COLORS } from '../data/productData';
+import { KosnoraLogo } from './KosnoraLogo';
 import heroImg from '../assets/images/kosnora_hero_case_1791272211390.jpg';
 import coupleImg from '../assets/images/kosnora_couple_look_1791272221398.jpg';
 import petImg from '../assets/images/kosnora_pet_look_1791272230677.jpg';
@@ -186,10 +187,8 @@ export const InteractiveCaseViewer: React.FC<InteractiveCaseViewerProps> = ({
               </div>
 
               {/* Brand Logo debossed on bottom */}
-              <div className="w-full text-center py-1 z-10">
-                <span className="text-[11px] font-black tracking-[0.3em] text-neutral-500 uppercase">
-                  KOSNORA
-                </span>
+              <div className="w-full flex items-center justify-center py-0.5 z-10 opacity-75">
+                <KosnoraLogo size="sm" className="h-4.5" />
               </div>
             </div>
           </div>

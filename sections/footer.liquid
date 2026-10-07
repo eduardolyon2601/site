@@ -2,25 +2,10 @@
   <div class="kosnora-container">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; padding-bottom: 3.5rem; border-bottom: 1px solid #1E1A29;">
       <!-- Brand Column with KNR Symbol -->
+      <!-- Brand Column with Official Brand Logo -->
       <div>
-        <a href="{{ routes.root_url | default: '/' }}" class="kosnora-logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem; text-decoration: none;">
-          <span style="position: relative; display: inline-flex; align-items: center; justify-content: center;">
-            <svg viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 27px; filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.45));">
-              <defs>
-                <linearGradient id="knrPurpleFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#D8B4FE" />
-                  <stop offset="40%" stop-color="#A855F7" />
-                  <stop offset="100%" stop-color="#6B21A8" />
-                </linearGradient>
-              </defs>
-              <path d="M4 6H12V22L24 6H33L19 24L34 42H24L12 26V42H4V6Z" fill="url(#knrPurpleFooter)" />
-              <path d="M25 6H33L47 31V6H55V42H47L33 17V42H25V6Z" fill="url(#knrPurpleFooter)" opacity="0.9" />
-              <path d="M42 6H56C61 6 64 9 64 14C64 18 61 21 57 22L64 42H55L49 24H49V42H42V6ZM49 18H55C56.5 18 57.5 17 57.5 14C57.5 11 56.5 10 55 10H49V18Z" fill="url(#knrPurpleFooter)" />
-            </svg>
-          </span>
-          <span style="font-size: 1.35rem; font-weight: 900; letter-spacing: 0.22em; color: #FFFFFF; text-transform: uppercase;">
-            {{ section.settings.brand_name | default: 'KOSNORA' }}
-          </span>
+        <a href="{{ routes.root_url | default: '/' }}" class="kosnora-logo" style="display: inline-flex; align-items: center; margin-bottom: 1.25rem; text-decoration: none;" aria-label="KOSNORA">
+          <img src="{{ 'kosnora-brand-logo.png' | asset_url }}" alt="KOSNORA Logo" style="height: 24px; width: auto; max-width: 100px; object-fit: contain;" />
         </a>
         <p class="kosnora-subtitle" style="font-size: 0.95rem; color: #E5E7EB; margin-bottom: 0.75rem; font-weight: 700; text-transform: uppercase;">
           Make your phone uniquely yours.

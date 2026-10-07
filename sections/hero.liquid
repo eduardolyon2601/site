@@ -1,47 +1,47 @@
-<section class="section-dark kosnora-py" style="position: relative; overflow: hidden;">
+<section class="section-light kosnora-py" style="position: relative; overflow: hidden; background: #FFFFFF; color: #111827; border-bottom: 1px solid #E5E7EB;">
   <!-- Ambient light -->
-  <div style="position: absolute; top: 15%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 400px; background: rgba(255, 255, 255, 0.03); border-radius: 50%; filter: blur(120px); pointer-events: none;"></div>
+  <div style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 350px; background: rgba(168, 85, 247, 0.06); border-radius: 50%; filter: blur(100px); pointer-events: none;"></div>
 
   <div class="kosnora-container" style="position: relative; z-index: 2;">
     <!-- Top Text Center Area -->
     <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 3.5rem;">
-      <div class="kosnora-kicker-badge">
-        <span style="width: 8px; height: 8px; border-radius: 50%; background: #34D399; display: inline-block;"></span>
-        <span>{{ section.settings.kicker | default: 'KOSNORA Ink NFC Smart Phone Case' }}</span>
+      <div class="kosnora-kicker-badge" style="background: #FAF5FF; border: 1px solid #E9D5FF; color: #7E22CE; padding: 6px 16px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase;">
+        <span style="width: 8px; height: 8px; border-radius: 50%; background: #9333EA; display: inline-block;"></span>
+        <span>{{ section.settings.kicker | default: 'BATTERY-FREE SMART DISPLAY' }}</span>
       </div>
 
-      <h1 class="kosnora-headline" style="font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 1.25rem; color: #FFFFFF; font-weight: 900; line-height: 1.05;">
+      <h1 class="kosnora-headline" style="font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 1.25rem; color: #111827; font-weight: 900; line-height: 1.05;">
         {{ section.settings.headline_1 | default: 'YOUR PHONE.' }}<br>
-        <span style="color: #C084FC; text-shadow: 0 0 25px rgba(168, 85, 247, 0.45);">{{ section.settings.headline_2 | default: 'YOUR LOOK.' }}</span>
+        <span style="color: #9333EA;">{{ section.settings.headline_2 | default: 'YOUR LOOK.' }}</span>
       </h1>
 
-      <p class="kosnora-subtitle" style="font-size: clamp(1rem, 2vw, 1.25rem); color: #D1D5DB; max-width: 640px; margin: 0 auto 2rem; font-weight: 600; line-height: 1.5;">
+      <p class="kosnora-subtitle" style="font-size: clamp(1rem, 2vw, 1.25rem); color: #9CA3AF; max-width: 640px; margin: 0 auto 2rem; font-weight: 500; line-height: 1.5;">
         {{ section.settings.subheadline | default: 'Change the picture on the back of your phone whenever you want — in just 5 minutes.' }}
       </p>
 
       <!-- 3 Quick Benefits -->
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 2.5rem; font-size: 0.8125rem; color: #E5E7EB; font-weight: 700;">
-        <div style="display: flex; align-items: center; gap: 0.5rem; background: #0A0A0E; padding: 0.5rem 1rem; border-radius: 9999px; border: 1px solid #27272A;">
-          <span style="color: #C084FC;">✓</span>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-bottom: 2.25rem; font-size: 0.8125rem; color: #D1D5DB; font-weight: 600;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.04); padding: 0.5rem 1rem; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <span style="color: #A855F7;">✓</span>
           <span>Change your image anytime</span>
         </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem; background: #0A0A0E; padding: 0.5rem 1rem; border-radius: 9999px; border: 1px solid #27272A;">
-          <span style="color: #C084FC;">✓</span>
+        <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.04); padding: 0.5rem 1rem; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <span style="color: #A855F7;">✓</span>
           <span>Battery-free design</span>
         </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem; background: #0A0A0E; padding: 0.5rem 1rem; border-radius: 9999px; border: 1px solid #27272A;">
-          <span style="color: #C084FC;">✓</span>
+        <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.04); padding: 0.5rem 1rem; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <span style="color: #A855F7;">✓</span>
           <span>Make your phone uniquely yours</span>
         </div>
       </div>
 
       <!-- Main CTA Button -->
       <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-        <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="background: linear-gradient(135deg, #9333EA 0%, #A855F7 50%, #7E22CE 100%); box-shadow: 0 0 25px rgba(168, 85, 247, 0.45); padding: 1rem 2.5rem; font-size: 0.875rem;">
+        <button type="button" data-open-drawer data-qty="2" class="kosnora-btn-primary" style="background: linear-gradient(135deg, #9333EA 0%, #8015F5 50%, #6B21A8 100%); box-shadow: 0 4px 15px rgba(147, 51, 234, 0.35); padding: 1.15rem 2.75rem; font-size: 0.875rem; border-radius: 12px; border: none; color: #FFF; font-weight: 900; text-transform: uppercase; cursor: pointer;">
           <span>{{ section.settings.cta_text | default: 'GET YOUR KOSNORA' }}</span>
           {% render 'icon-arrow-right' %}
         </button>
-        <span style="font-size: 0.8125rem; color: #9CA3AF; font-weight: 600;">
+        <span style="font-size: 0.8125rem; color: #6B7280; font-weight: 600;">
           {{ section.settings.microcopy | default: 'Starting at $59.90 each' }}
         </span>
       </div>

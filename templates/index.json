@@ -1,15 +1,12 @@
 {
   "sections": {
-    "hero": {
-      "type": "hero",
-      "settings": {
-        "kicker": "KOSNORA Ink NFC Smart Phone Case",
-        "headline_1": "YOUR PHONE.",
-        "headline_2": "YOUR LOOK.",
-        "subheadline": "Change the picture on the back of your phone whenever you want — in just 5 minutes.",
-        "cta_text": "GET YOUR KOSNORA",
-        "microcopy": "Starting at $59.90 each"
-      }
+    "product_hero": {
+      "type": "product-hero",
+      "settings": {}
+    },
+    "tech_break": {
+      "type": "tech-break",
+      "settings": {}
     },
     "how_it_works": {
       "type": "how-it-works",
@@ -32,6 +29,10 @@
         "tagline": "Designed for people who want their phone to feel different."
       }
     },
+    "reviews": {
+      "type": "reviews",
+      "settings": {}
+    },
     "pricing_offer": {
       "type": "pricing-offer",
       "settings": {
@@ -49,10 +50,12 @@
     }
   },
   "order": [
-    "hero",
+    "product_hero",
+    "tech_break",
     "how_it_works",
     "why_kosnora",
     "social_proof",
+    "reviews",
     "pricing_offer",
     "final_cta_faq"
   ]

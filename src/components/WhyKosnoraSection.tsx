@@ -4,13 +4,13 @@ import { User, RefreshCcw, BatteryCharging, Sparkles } from 'lucide-react';
 export const WhyKosnoraSection: React.FC = () => {
   const benefits = [
     {
-      title: 'PERSONAL',
-      desc: 'Make your phone feel like yours.',
+      title: 'YOUR STYLE',
+      desc: 'Make your phone feel truly yours.',
       icon: User,
     },
     {
-      title: 'CHANGEABLE',
-      desc: 'Switch your image whenever you want.',
+      title: 'CHANGE ANYTIME',
+      desc: 'Switch the image whenever you want.',
       icon: RefreshCcw,
     },
     {
@@ -19,48 +19,42 @@ export const WhyKosnoraSection: React.FC = () => {
       icon: BatteryCharging,
     },
     {
-      title: 'DIFFERENT',
-      desc: 'Stand out from ordinary phone cases.',
+      title: 'STAND OUT',
+      desc: 'A phone case unlike ordinary cases.',
       icon: Sparkles,
     },
   ];
 
   return (
-    <section id="why-kosnora" className="bg-black text-white py-16 sm:py-24 border-b border-neutral-900 relative">
-      {/* Subtle Ambient Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#9333EA]/10 rounded-full blur-[120px] pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          <span className="text-xs font-black tracking-widest text-[#C084FC] uppercase block mb-2">
-            WHY KOSNORA
+    <section id="benefits" className="bg-white text-neutral-900 py-12 sm:py-16 border-b border-neutral-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-xl mx-auto mb-10">
+          <span className="text-xs font-black tracking-widest text-[#9333EA] uppercase block mb-1">
+            KEY BENEFITS
           </span>
-          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
-            ONE CASE. ENDLESS LOOKS.
+          <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-neutral-950">
+            WHY KOSNORA
           </h2>
         </div>
 
-        {/* Exactly 4 Key Benefits Grid */}
+        {/* 4 Clean Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {benefits.map((b) => {
             const Icon = b.icon;
             return (
               <div
                 key={b.title}
-                className="group rounded-2xl bg-neutral-950/80 border border-neutral-800 hover:border-[#A855F7]/50 p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 hover:bg-neutral-900/40"
+                className="bg-neutral-50 hover:bg-white border border-neutral-200 hover:border-[#9333EA]/40 rounded-2xl p-6 transition-all shadow-2xs hover:shadow-sm"
               >
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-[#C084FC] mb-5 group-hover:scale-110 group-hover:border-[#A855F7]/40 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all">
-                    <Icon className="w-6 h-6" />
-                  </div>
-
-                  <h3 className="text-lg sm:text-xl font-black text-white uppercase tracking-wider mb-2">
-                    {b.title}
-                  </h3>
+                <div className="w-11 h-11 rounded-xl bg-[#FAF5FF] border border-[#E9D5FF] flex items-center justify-center text-[#9333EA] mb-4">
+                  <Icon className="w-5 h-5" />
                 </div>
 
-                <p className="text-sm font-semibold text-neutral-400 leading-snug">
+                <h3 className="text-base font-black text-neutral-950 uppercase tracking-wide mb-1.5">
+                  {b.title}
+                </h3>
+
+                <p className="text-sm font-semibold text-neutral-600 leading-snug">
                   {b.desc}
                 </p>
               </div>
